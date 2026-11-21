@@ -33,7 +33,7 @@ jobs:
         run: pip install "flet==0.27.6"
 
       - name: Build APK
-        run: flet build apk --yes
+        run: yes | flet build apk
         env:
           CI: true
 
